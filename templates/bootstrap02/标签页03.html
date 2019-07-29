@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <script src="../../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+
+            $('#aa').click(function () {
+                // 触发切换事件
+                $('#btn').tab('show');
+            })
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                console.log(('1'));
+                console.log(e.target); // 切换之后的目标对象
+                console.log(e.relatedTarget); // 切换之前的目标对象
+                console.log($(e.target).text());
+                console.log($(e.target).attr('name'));
+            });
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                console.log(('2'));
+                console.log(e.target); // newly activated tab
+                console.log(e.relatedTarget); // previous active tab
+                console.log($(e.target).text());
+                console.log($(e.target).attr('name'));
+            });
+            $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
+                console.log(('3'));
+                console.log(e.target); // newly activated tab
+                console.log(e.relatedTarget); // previous active tab
+                console.log($(e.target).text());
+                console.log($(e.target).attr('name'));
+            });
+    });
+</script>
+</head>
+<body>
+
+    <ul class="nav nav-tabs">
+<!--        标签页的头-->
+        <li class="active"><a href="#user_list" data-toggle="tab">用户列表</a></li>
+        <li><a href="#user_manage" data-toggle="tab" id="btn" name="AA">用户管理</a></li>
+    </ul>
+
+<!--标签页内容组-->
+    <div class="tab-content">
+        <div class="tab-pane active" id="user_list">这是用户列表</div>
+        <div class="tab-pane" id="user_manage">这是用户管理</div>
+    </div>
+
+    <hr>
+
+<button class="btn btn-default" id="aa">切换标签页</button>
+
+</body>
+</html>

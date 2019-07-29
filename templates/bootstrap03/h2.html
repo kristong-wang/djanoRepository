@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw2</title>
+    <!--引入移动设置优先的配置-->
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+</head>
+<nav class="nav navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header ">
+            <a href="" class="navbar-brand">员工管理系统
+                <small>v1.0</small>
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    退出登录<span class="glyphicon glyphicon-log-out"></span>
+                </a>
+                <ul class="dropdown-menu"></ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    欢迎: <span style="color: #447ab2">小黑</span>
+                </a>
+                <ul class="dropdown-menu"></ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-3">
+            <!--<ul class="list-group">-->
+            <!--<li class="form-group-sm">-->
+
+            <div class="panel-group" id="panelgroup">
+                <!--创建手风琴的面板-->
+                <div class="panel panel-default">
+                    <!--创建手风琴的标题-->
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4><span href="#aa" data-toggle="collapse"><strong>用户管理</strong></span></h4>
+                        </div>
+                    </div>
+
+                    <!--创建手风琴的主题内容-->
+                    <div id="aa" class="panel-collapse collapse in" data-parent="#panelgroup">
+                        <!--<div class="panel-body">-->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <button href="" class="btn btn-primary btn-justified">用户列表</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div class="panel-footer">-->
+                    <!--脚-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--</li>-->
+            <!--<li class="form-group-sm">-->
+            <div class="panel-group" id="panelgroup1">
+                <!--创建手风琴的面板-->
+                <div class="panel panel-default">
+                    <!--创建手风琴的标题-->
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4><span href="#bb" data-toggle="collapse"><strong>类别管理</strong></span></h4>
+                        </div>
+                    </div>
+
+                    <!--&lt;!&ndash;创建手风琴的主题内容&ndash;&gt;-->
+                    <!--<div id="bb" class="panel-collapse collapse in" data-parent="#panelgroup1">-->
+                    <!--&lt;!&ndash;<div class="panel-body">&ndash;&gt;-->
+                    <!--<ul class="list-group">-->
+                    <!--<li class="list-group-item"><button href="" class="btn btn-primary btn-justified">用户列表</button></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="panel-footer">-->
+                    <!--脚-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--</li>-->
+            <!--</ul>-->
+
+            <div class="panel-group" id="panelgroup2">
+                <!--创建手风琴的面板-->
+                <div class="panel panel-default">
+                    <!--创建手风琴的标题-->
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4><span href="#cc" data-toggle="collapse"><strong>图书管理</strong></span></h4>
+                        </div>
+                    </div>
+
+                    <!--创建手风琴的主题内容-->
+                    <!--<div id="cc" class="panel-collapse collapse in" data-parent="#panelgroup2">-->
+                    <!--&lt;!&ndash;<div class="panel-body">&ndash;&gt;-->
+                    <!--<ul class="list-group">-->
+                    <!--<li class="list-group-item"><button href="" class="btn btn-primary btn-justified">用户列表</button></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="panel-footer">-->
+                    <!--脚-->
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="panel-group" id="panelgroup3">
+                <!--创建手风琴的面板-->
+                <div class="panel panel-default">
+                    <!--创建手风琴的标题-->
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4><span href="#dd" data-toggle="collapse"><strong>订单管理</strong></span></h4>
+                        </div>
+                    </div>
+
+                    <!--创建手风琴的主题内容-->
+                    <!--<div id="dd" class="panel-collapse collapse in" data-parent="#panelgroup3">-->
+                    <!--&lt;!&ndash;<div class="panel-body">&ndash;&gt;-->
+                    <!--<ul class="list-group">-->
+                    <!--<li class="list-group-item"><button href="" class="btn btn-primary btn-justified">用户列表</button></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="panel-footer">-->
+                    <!--脚-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div> <!--class="col-sm-3"-->
+
+        <div class="col-sm-9">
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+                    featured content or information.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+
+            <div class="alert alert-danger alert-dismissable" role="alert">
+                <div><strong>网站程序漏洞,继续修复!</strong></div>
+                <button class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+                <div>当前版本程序(v1.0)存在严重安全问题,容易造成攻击,请立即修复!!!</div>
+                <br>
+                <div>
+                    <button class="btn btn-danger">立即修复</button>
+                    <button class="btn btn-primary">稍后处理</button>
+                </div>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span><strong>系统状态</strong></span>
+                </li>
+                <li class="list-group-item">
+                    <span><strong>内存使用率40%</strong></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                    </div>
+
+                    <span><strong>数据库使用率20%</strong></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                             aria-valuenow="20"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+
+                    <span><strong>磁盘使用率60%</strong></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+
+                    <span><strong>CPU使用率80%</strong></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                             aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div> <!--class="col-sm-9"-->
+
+
+    </div> <!--class="row"-->
+</div> <!--class="container-fluid"-->
+
+</html>

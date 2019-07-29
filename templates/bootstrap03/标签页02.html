@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页02胶囊 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!--先引入jquery-->
+    <script src="../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <ul class="nav nav-pills">   <!--此处有变动-->
+<!--        标签页的头-->
+        <li class="active"><a href="#user_list" data-toggle="tab">用户列表</a></li>
+        <li><a href="#user_manage" data-toggle="tab">用户管理</a></li>
+        <li class="dropdown">
+<!--            触发器-->
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                下拉菜单： <span class="caret"></span>
+            </a>
+<!--            下拉菜单的内容-->
+            <ul class="dropdown-menu">
+                <li><a href="#AA" data-toggle="tab">A</a></li>
+                <li><a href="#BB" data-toggle="tab">B</a></li>
+            </ul>
+        </li>
+    </ul>
+
+<!--标签页内容组-->
+    <div class="tab-content">
+        <div class="tab-pane active" id="user_list">这是用户列表</div>
+        <div class="tab-pane" id="user_manage">这是用户管理</div>
+        <div class="tab-pane" id="AA">这是内容A</div>
+        <div class="tab-pane" id="BB">这是内容B</div>
+    </div>
+
+</body>
+</html>
